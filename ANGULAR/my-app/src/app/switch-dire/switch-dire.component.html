@@ -1,0 +1,14 @@
+<h3>Switch Directive Test</h3>
+
+<!--Assignment 1: Create a Switch Case Directive-->
+<div [ngSwitch]='num'>
+    <div *ngSwitchDefault>Please Enter a valid Number 1-5</div>
+    <div *ngSwitchCase ="'1'">Number Entered - One</div>
+    <div *ngSwitchCase ="'2'">Number Entered - Two</div>
+    <div *ngSwitchCase ="'3'">Number Entered - Three</div>
+    <div *ngSwitchCase ="'4'">Number Entered - Four</div>
+    <div *ngSwitchCase ="'5'">Number Entered - Five</div>
+</div>
+<div class = 'input-num'>
+    Enter the number <input type='text' [(ngModel)] = "num" />
+</div>

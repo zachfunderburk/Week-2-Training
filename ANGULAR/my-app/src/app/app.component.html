@@ -1,5 +1,14 @@
-<h3 style='text-align: center;'>Welcome to {{title}}</h3> <!-- The Double Curly Braces use interpolation -->
+<h3 style='text-align: center;'>Welcome to {{title | uppercase}}</h3> <!-- The Double Curly Braces use interpolation -->
+<!-- The Pipe character can update the information to be returned in the desired format-->
 <h4 style='text-align: center;'>Created by {{author}}</h4>
 
 <hr/>
 <app-new-comp></app-new-comp> <!-- This is the selector tool from the New Component-->
+<hr/>
+<app-struct-dire></app-struct-dire> <!-- This is the selector tool from the Structural Directive Component-->
+<hr/>
+<app-switch-dire></app-switch-dire>
+<hr/>
+<app-style-dire></app-style-dire>
+<hr/>
+<app-pipe-demo></app-pipe-demo>

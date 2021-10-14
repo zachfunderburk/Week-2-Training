@@ -9,11 +9,11 @@ export class NewCompComponent implements OnInit {
 
   course="Angular"; //New Property that can be used in the New Comp HTML doc
   constructor() { 
-    alert('Constructor Alerted')
+    //alert('Constructor Alerted')
   }
 
   ngOnInit(): void {
-    alert('ngOnInit Alert')
+    //alert('ngOnInit Alert')
   }
 
   // ngOnChanges():SimpleChange

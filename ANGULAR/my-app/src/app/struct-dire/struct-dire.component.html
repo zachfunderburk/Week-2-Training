@@ -1,0 +1,20 @@
+<h3>Structural Directive Test</h3>
+
+<p>Struct-dire is working</p>
+<ul *ngFor="let n of names"> <!-- Loops through the Names Array in the component.ts file to pull each name-->
+    <li>{{n.name}} </li> <!-- Displays the name as it is pulled-->
+</ul>
+<br />
+<h3>Ng If</h3>
+<button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+show = {{show}}
+<br>
+<div *ngIf="show">Text to show</div>
+
+<br>
+<!-- Pulls in the data from the custom Directive which is set up as an Attribute Directive -->
+<hr/>
+<h3>Test of the Attribue Directive</h3> 
+<div appTextDire>
+    Custom Directive Test
+</div>
