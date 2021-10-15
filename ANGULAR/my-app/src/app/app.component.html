@@ -1,14 +1,79 @@
-<h3 style='text-align: center;'>Welcome to {{title | uppercase}}</h3> <!-- The Double Curly Braces use interpolation -->
+<!-- <h3 style='text-align: center;'>Welcome to {{title | uppercase}}</h3> The Double Curly Braces use interpolation -->
 <!-- The Pipe character can update the information to be returned in the desired format-->
-<h4 style='text-align: center;'>Created by {{author}}</h4>
+<!-- <h4 style='text-align: center;'>Created by {{author}}</h4> -->
 
+<!-- <hr/>
+<app-new-comp></app-new-comp>  This is the selector tool from the New Component
 <hr/>
-<app-new-comp></app-new-comp> <!-- This is the selector tool from the New Component-->
-<hr/>
-<app-struct-dire></app-struct-dire> <!-- This is the selector tool from the Structural Directive Component-->
+<app-struct-dire></app-struct-dire> This is the selector tool from the Structural Directive Component
 <hr/>
 <app-switch-dire></app-switch-dire>
 <hr/>
 <app-style-dire></app-style-dire>
 <hr/>
 <app-pipe-demo></app-pipe-demo>
+<hr/>
+<app-one-way-db></app-one-way-db>
+<br/>
+<app-two-way-db></app-two-way-db>
+<hr/>
+<app-serv-demo></app-serv-demo>
+<hr/>
+<app-serv-demo2></app-serv-demo2> -->
+
+<!-- <nav>
+    <ul>
+       <li>
+            <a routerLink = 'first-component'>New Component</a>
+       </li>
+       <li>
+            <a routerLink = 'pipeDemo'>Pipe Demo</a>
+       </li> 
+    </ul>
+</nav>
+<router-outlet></router-outlet> -->
+
+<!-- Assignment: Get All Pages Set up in a navigation bar -->
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+     <!-- Links -->
+     <ul class="navbar-nav">
+          <li class="nav-item">
+               <a routerLink="firstComponent" class="nav-link" routerLinkActive="active">New Component</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="pipeDemo" class="nav-link" routerLinkActive="active">Pipe Demo</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="oneWay" class="nav-link" routerLinkActive="active">One Way DB</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="twoWay" class="nav-link" routerLinkActive="active">Two Way DB</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="structDire" class="nav-link" routerLinkActive="active">Structual Directive</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="styleDire" class="nav-link" routerLinkActive="active">Style Directive</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="switchDire" class="nav-link" routerLinkActive="active">Switch Directive</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="servDemo1" class="nav-link" routerLinkActive="active">Server Demo 1</a>
+          </li>
+          <li class="nav-item">
+               <a routerLink="servDemo2" class="nav-link" routerLinkActive="active">Server Demo 2</a>
+          </li>
+     </ul>
+</nav>
+<div class="container">
+     <br>
+     <h2 style="text-align: center;">{{title}}</h2>
+     <hr>
+     <div class="card">
+          <div class="card-body">
+               <router-outlet></router-outlet>
+          </div>
+     </div>
+</div>
