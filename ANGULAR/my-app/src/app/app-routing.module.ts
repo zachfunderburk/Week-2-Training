@@ -10,6 +10,8 @@ import { StructDireComponent } from './struct-dire/struct-dire.component';
 import { StyleDireComponent } from './style-dire/style-dire.component';
 import { SwitchDireComponent } from './switch-dire/switch-dire.component';
 import { TwoWayDBComponent } from './two-way-db/two-way-db.component';
+import { HttpClientComponent } from './http-client/http-client.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 
 //The Const Routes enables the ngModule Inport to connect to the RouterModule Root
 //each Path object can be used in the main HTML doc to connect the component information to the Router
@@ -23,6 +25,8 @@ const routes: Routes = [
 {path: 'styleDire', component: StyleDireComponent},
 {path: 'servDemo1', component: ServDemoComponent},
 {path: 'servDemo2', component: ServDemo2Component},
+{path: 'httpClient', component: HttpClientComponent},
+{path: 'createStudent', component: CreateStudentComponent}
 ];
 
 @NgModule({

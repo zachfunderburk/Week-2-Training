@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NewCompComponent } from './new-comp/new-comp.component';
@@ -15,6 +16,8 @@ import { TwoWayDBComponent } from './two-way-db/two-way-db.component';
 import { ServDemoComponent } from './serv-demo/serv-demo.component';
 import { ServDemo2Component } from './serv-demo2/serv-demo2.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientComponent } from './http-client/http-client.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { AppRoutingModule } from './app-routing.module';
     TwoWayDBComponent,
     ServDemoComponent,
     ServDemo2Component,
+    HttpClientComponent,
+    CreateStudentComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

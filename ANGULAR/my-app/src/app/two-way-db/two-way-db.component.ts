@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayDBComponent implements OnInit {
 
-  val: string = '';
+  val: String = '';
 
   constructor() { }
 
